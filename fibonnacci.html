@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fibonnacci</title>
+</head>
+
+<body>
+    Numero:<input id="num" type="number">
+    <button onclick="main()">Resultado:</button><br />
+    Resposta: <div id="resposta" style='display:inline'></div><br />
+
+</html>
+<script>
+    function main() {
+        var num = parseInt(document.getElementById("num").value);
+        var resp = document.getElementById("resposta");
+
+        resp.innerHTML = fibonacci(num);
+    }
+    function fibonacci(n)
+    if (n <= 0) {
+        return alert("Digite um valor válido")
+    }
+
+    {
+        if (n < 2) {
+            return n
+        }
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+</script>
